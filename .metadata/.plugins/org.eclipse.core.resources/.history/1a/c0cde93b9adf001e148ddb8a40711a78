@@ -1,0 +1,7 @@
+package com.TestCases;
+
+public class DeleteCustomer 
+{
+	@FindBy(xpath = "//span[text() ='Admin']")
+	private WebElement Adminbutton;
+}

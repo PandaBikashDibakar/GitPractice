@@ -1,0 +1,7 @@
+package com.TestCases;
+
+public class AdminPage 
+{
+	@FindBy(xpath = "//button[text() =' Add ']")
+	private WebElement Addbutton;
+}

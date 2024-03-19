@@ -1,0 +1,58 @@
+package com.TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AdminPage 
+{
+	//Declaration 
+	@FindBy(xpath = "//button[text() =' Add ']")
+	private WebElement addbutton;
+	
+	@FindBy(xpath ="(//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[1]")
+	private WebElement Userrole;
+	
+	@FindBy(xpath = "(//span[text() ='Admin'])[2]")
+	private WebElement selectrole;
+	
+	@FindBy(xpath = "(//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[2]")
+	private WebElement status;
+	
+	@FindBy(xpath = "//span[text() ='Enabled']")
+	private WebElement Enabled;
+	
+	@FindBy(xpath = "//input[@placeholder='Type for hints...']")
+	private WebElement EmployeeNameField;
+	
+	//initialization 
+	public  AdminPage (WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	//updation 
+	public void add()
+	{
+		addbutton.click();
+	}
+	
+	public void userrole()
+	{
+		Userrole.click();
+		selectrole.click();
+	}
+	
+	public void status()
+	{
+		status.click();
+		Enabled.click();
+	}
+	
+	public void Employeed()
+	{
+		EmployeeNameField.sendKeys("Bikash");
+	}
+	
+}

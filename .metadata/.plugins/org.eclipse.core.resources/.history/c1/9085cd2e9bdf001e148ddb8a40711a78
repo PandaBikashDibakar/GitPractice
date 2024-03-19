@@ -1,0 +1,10 @@
+package com.TestPages;
+
+public class DeleteCutomer 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

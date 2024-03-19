@@ -1,0 +1,16 @@
+package com.TestCases;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AdminPage 
+{
+	//Declaration 
+	@FindBy(xpath = "//button[text() =' Add ']")
+	private WebElement addbutton;
+	
+	//initialization 
+	
+	
+	
+}

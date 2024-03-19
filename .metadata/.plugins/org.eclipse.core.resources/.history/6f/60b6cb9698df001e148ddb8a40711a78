@@ -1,0 +1,9 @@
+package com.TestCases;
+public class Logoutpage 
+{
+	public static void main(String[] args) 
+	{
+		@FindBy(xpath = '')
+	}
+	
+}
